@@ -198,17 +198,24 @@ h1, h2 {
 .gallery {
 	width: 60%;
 }
-img.gal-img {
-	width: 100%;
-	height: auto;
-}
 .rss-feeds {
 	background-color: #FFF;
 	width: 40%;
 	float: right;
 }
+img.gal-img {
+	width: 100%;
+	height: auto;
+}
+.low {
+	display: inline-flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
 .card {
-	display: inline-block;
+	margin: 1em;
+	padding: .5em;
+	background-color: #FFF;
 }
 /*--Footer Styles
 --*/

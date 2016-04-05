@@ -142,14 +142,32 @@ input[type=button] {width: auto; overflow: visible;}
 /*-- Default Styles
 --*/
 html {
-	font-family: Roboto;
-	font-size: 16px;
-	font-weight: 300;	
+	font-size: 17px; /*--sets root pixel size--*/
 }
 body {
 	overflow-x: hidden;
 	background-color: #FF9E59;
+	font-family: Roboto;
+	font-weight: 300;
+	color: #343434;
 }
+header {
+  font-size: 4rem;
+  color: #FFF;
+}
+footer {
+  font-size: .9rem;
+}
+aside {
+  font-size: 1.2rem;
+}
+h1 {font-size: 2.5em;}
+h2 {font-size: 2em;}
+h3 {font-size: 1.5em;}
+h4 {font-size: 1.25em;}
+h5 {font-size: 1em;}
+h6 {font-size: 1em;}
+p {font-size: 1em;}
 a {
 	font-weight: 700;
 	color: darkgreen;
@@ -172,17 +190,10 @@ h1, h2 {
 }
 /*--Container Styles
 --*/
-.outer {
-}
-.upper {
-}
 .featured > div {
 	display: inline-block;
 }
 .branding {
-	font-size: 10em;
-	background-color: #FF9E59;
-	color: #FFF;
 }
 .gallery {
 	width: 60%;
@@ -192,18 +203,22 @@ img.gal-img {
 	height: auto;
 }
 .rss-feeds {
-	background-color: #CDCDCD;
+	background-color: #FFF;
 	width: 40%;
 	float: right;
 }
-.low {
-}
-.low-inner {
-}
-.content{
+.card {
+	display: inline-block;
 }
 /*--Footer Styles
 --*/
 .copy {
 }
-
+/*--Media Queries
+--*/
+@media (max-width: 900px) {
+	html {font-size: 15px;}/*--sets pixel size breakpoint--*/
+}
+@media (max-width: 400px) {
+	html {font-size: 13px;}/*--sets pixel size breakpoint--*/
+}

@@ -139,6 +139,20 @@ input[type=button] {width: auto; overflow: visible;}
 /* let's clear some floats */
 .clearfix:after { content: " "; display: block; clear: both; }
 
+/*-- 
+Color Palette
+	26BDFC 
+	  --vivid blue
+	797E7F
+	  --storm gray
+	49A8A8
+	  --north sea
+	262D40
+	  --deep navy
+	FF9E59
+	  --sunset orange
+--*/
+
 /*-- Default Styles
 --*/
 html {
@@ -146,10 +160,10 @@ html {
 }
 body {
 	overflow-x: hidden;
-	background-color: #FF9E59;
+	background-color: #49A8A8;
 	font-family: Roboto;
 	font-weight: 300;
-	color: #343434;
+	color: #797E7F;
 }
 header {
   font-size: 4rem;
@@ -157,9 +171,14 @@ header {
 }
 footer {
   font-size: .9rem;
+  color: #FFF;
+  padding: 1em 2em;
 }
 aside {
   font-size: 1.2rem;
+}
+article {
+	background-color: #49A8A8;
 }
 h1 {font-size: 2.5em;}
 h2 {font-size: 2em;}
@@ -170,7 +189,7 @@ h6 {font-size: 1em;}
 p {font-size: 1em;}
 a {
 	font-weight: 700;
-	color: darkgreen;
+	color: #26BDFC;
 	text-decoration: none;
 }
 a:visited {
@@ -190,33 +209,80 @@ h1, h2 {
 }
 /*--Container Styles
 --*/
-.featured > div {
-	display: inline-block;
+.featured {
+	display: flex;
 }
 .branding {
 }
 .gallery {
 	width: 60%;
+	background-color: #FFF;
 }
 .rss-feeds {
 	background-color: #FFF;
 	width: 40%;
-	float: right;
 }
 img.gal-img {
 	width: 100%;
 	height: auto;
 }
 .low {
-	display: inline-flex;
+	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
+	border-top: 4px dashed #FFF;
+	margin-top: 1em;
+	padding-top: .5em;
 }
 .card {
-	margin: 1em;
-	padding: .5em;
-	background-color: #FFF;
+	margin: .5em 0.25em;
+	background-color: #49A8A8;
 }
+.card-in img {
+	width: 100%;
+	height: auto;
+}
+.card {
+  position: relative;
+  margin: 10px auto;
+  width: 300px;
+  height: 225px;
+  z-index: 1;
+}
+.card {
+  perspective: 100;
+}
+.card-in {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all .75s ease-out .25s;
+}
+.card:hover .card-in {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #49A8A8;
+}
+.face.back h1 {font-size: 10em; line-height: 1;}
+.face.back h5 {font-size: 2em; line-height: 1;color: #FF9E59;}
+.face.back p {font-size: 1.5em; line-height: 1;color: #FF9E59;}
+
 /*--Footer Styles
 --*/
 .copy {

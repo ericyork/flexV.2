@@ -209,33 +209,31 @@ h6 {font-size: 1em;}
 p {font-size: 1em;}
 a {
 	font-weight: 700;
-	color: #859900;
+	color: #268bd2;
 	text-decoration: none;
 }
 a:visited {
-	color: #859900;
+	color: #268bd2;
 }
 a:hover {
-	color: #586e75;
+	color: #2aa198;
 }
 a:focus {
 	outline-color: transparent;
     text-decoration: none;
 }
-
 h1, h2 {
 	font-family: 'Roboto Mono';
 	font-weight: 400;
 }
-
 .rss-feeds h2 {
-	margin: .5em 0;
+	margin-top: .5em;
 }
 .feeds-list li {
 	margin: .75em 0;
 }
 .feeds-list li:last {
-	margin: 0em 0;
+	margin: 0;
 }
 /*--Container Styles
 --*/
@@ -259,14 +257,13 @@ img.gal-img {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	border-top: 4px dashed #eee8d5;
 	margin-top: 1em;
 	padding-top: .5em;
 }
 .card {
 	margin: .5em 0.25em;
 	background-color: #073642;
-	border-bottom: 4px dashed #cb4b16;
+	border-bottom: 2px dashed #eee8d5;
 }
 .card-in img {
 	width: 100%;
@@ -292,13 +289,18 @@ img.gal-img {
   transform: rotateY(180deg);
 }
 .face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px;
+	color: #eee8d5;
+	text-align: center;
+	display: block;
+	box-sizing: border-box;
 }
 .front {
 }
@@ -309,17 +311,12 @@ img.gal-img {
 	color: #eee8d5;
 }
 .face.back {
-  display: block;
   transform: rotateY(180deg);
-  box-sizing: border-box;
-  padding: 10px;
-  color: #eee8d5;
-  text-align: center;
-  background-color: #073642;
 }
-.face.back h1 {font-size: 10.5em; line-height: 1; color:#b58900;}
-.face.back h5 {font-size: 2em; line-height: 1;color: #859900; margin-top: -16px; margin-bottom: -16px;}
-.face.back p {font-size: 1.5em; line-height: 1;color: #859900; margin-top: -8px; margin-bottom: -16px;}
+.face h1 {font-size: 10.5em; line-height: 1; color:#859900; letter-spacing: -18px;}
+.face h5 {font-size: 2em; line-height: 1;color: #859900; margin-top: -16px; margin-bottom: -16px;}
+.face p {font-size: 1.5em; line-height: 1;color: #cb4b16; margin-top: -8px;}
+.face p:first-child {color: #93a1a1; margin-bottom: -16px; font-weight: 100;}
 
 /*--Footer Styles
 --*/

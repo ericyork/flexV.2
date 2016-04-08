@@ -1,0 +1,21 @@
+To do:
+
+Header breakpoints
+
+add image slider
+
+add rss feed block
+
+Finish footer
+
+Re-do images for weeks
+
+Add links to weeks
+
+adjust media queries for width, font-size.
+
+Check letter spacing so it's only where it needs to be.
+
+create posts on my subreddit
+
+clean up and comment the code :)

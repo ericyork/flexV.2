@@ -201,7 +201,7 @@ article {
 	background-color: #073642;
 }
 h1 {font-size: 2.5em;}
-h2 {font-size: 2em;} aside h2 {color: #cb4b16;}
+h2 {font-size: 2em;} aside h2 {color: #dc322f;}
 h3 {font-size: 1.5em;}
 h4 {font-size: 1.25em;}
 h5 {font-size: 1em;}
@@ -316,7 +316,7 @@ img.gal-img {
 }
 .face h1 {font-size: 10.5em; line-height: 1; color:#859900; letter-spacing: -18px;}
 .face h5 {font-size: 2em; line-height: 1;color: #859900; margin-top: -16px; margin-bottom: -16px;}
-.face p {font-size: 1.5em; line-height: 1;color: #cb4b16; margin-top: -8px;}
+.face p {font-size: 1.5em; line-height: 1;color: #dc322f; margin-top: -8px;}
 .face p:first-child {color: #93a1a1; margin-bottom: -16px; font-weight: 100;}
 
 /*--Footer Styles

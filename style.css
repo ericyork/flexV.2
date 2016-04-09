@@ -289,6 +289,15 @@ img.gal-img {
 /*--Footer Styles
 --*/
 .copy {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+}
+.colo1 {
+	border-left: 2px dotted #eee8d5;
+}
+.colo1:first-child {
+	border-left: 0;
 }
 /*--Media Queries
 --*/

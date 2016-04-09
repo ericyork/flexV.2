@@ -292,7 +292,7 @@ img.gal-img {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-around;
-		margin-top: 8px;
+		margin-top: -6px;
 		padding-top: 24px;
 		background-color: #002b36;
 }

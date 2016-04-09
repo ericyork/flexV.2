@@ -291,13 +291,16 @@ img.gal-img {
 .copy {
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-between;
+		justify-content: space-around;
+		margin-top: 8px;
+		padding-top: 24px;
+		background-color: #002b36;
 }
-.colo1 {
-	border-left: 2px dotted #eee8d5;
+.copy a {
+	color: #839496;
 }
-.colo1:first-child {
-	border-left: 0;
+.copy a:hover {
+	color: #eee8d5;
 }
 /*--Media Queries
 --*/

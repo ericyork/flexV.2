@@ -145,7 +145,7 @@ body {
 .navigation {
 	/* Collapsed by default*/
   width: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   position: fixed;
   top: 0;
   right: 0;

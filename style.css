@@ -138,6 +138,10 @@ body {
 	color: #586e75;
 	letter-spacing: -1px;
 }
+#main-navigation:target {
+	/* Opens Navigation */
+  width: 38.16%;
+}
 .navigation {
 	/* Collapsed by default*/
   width: 0;
@@ -149,10 +153,25 @@ body {
 	transition: width .4s ease;
 	background-color: #eee8d5;
 	z-index: 100;
-	box-shadow:inset 0px 0px 0px 10px #002b36;
+	box-shadow:inset 0px 0px 0px 10px #839496;
 }
 .navigation h2 {
-	color:
+	color:#dc322f;
+	padding-left: 40px;
+	padding-top: 1.3em;
+	padding-bottom: 18px;
+	font-weight: 400;
+}
+.navigation li a {
+	padding-left: 50px;
+	font-weight: 400;
+	display: block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+.navigation li a:hover {
+	background-color: #839496;
+	color: #eee8d5;
 }
 .icon-wrap {
 	position: absolute;
@@ -165,13 +184,9 @@ span.hamburger {
 span:hover.hamburger {
 	color: #eee8d5;
 }
-#main-navigation:target {
-	/* Opens Navigation */
-  width: 38.16%;
-}
 span.x-mark {
 	color: #839496;
-	font-size: 1.5em;
+	font-size: 3em;
 	position: absolute;
 	top: 0;
 	right: 26px;
@@ -211,7 +226,9 @@ footer {
 aside {
   font-size: 1.2rem;
 }
-nav {font-size:2rem}
+nav {
+	font-size: 1.75rem;
+}
 article {
 	background-color: #073642;
 }

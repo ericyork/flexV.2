@@ -147,9 +147,12 @@ body {
   right: 0;
   height: 100%;
 	transition: width .4s ease;
-	background-color: #073642;
+	background-color: #eee8d5;
 	z-index: 100;
-	border-left: 5px solid #002b36;
+	box-shadow:inset 0px 0px 0px 10px #002b36;
+}
+.navigation h2 {
+	color:
 }
 .icon-wrap {
 	position: absolute;
@@ -168,13 +171,13 @@ span:hover.hamburger {
 }
 span.x-mark {
 	color: #839496;
-	font-size: 4.5em;
+	font-size: 1.5em;
 	position: absolute;
 	top: 0;
 	right: 26px;
 }
 span:hover.x-mark {
-	color: #eee8d5;
+	color: #073642;
 }
 .page-wrap {
 	/* Open by default */
@@ -208,6 +211,7 @@ footer {
 aside {
   font-size: 1.2rem;
 }
+nav {font-size:2rem}
 article {
 	background-color: #073642;
 }

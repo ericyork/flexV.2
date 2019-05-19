@@ -309,22 +309,17 @@ img.gal-img {
   z-index: 1;
 }
 .card {
-  perspective: 100;
 }
 .card-in {
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
-  transition: all .75s ease-out .25s;
 }
 .card:hover .card-in {
-  transform: rotateY(180deg);
 }
 .face {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	backface-visibility: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -335,6 +330,12 @@ img.gal-img {
 	box-sizing: border-box;
 }
 .front {
+	background-color: #073642;
+	opacity: 1;
+	transition: all .5s ease-in-out;
+}
+.front:hover {
+	opacity: 0;
 }
 .card-face {
 	font-size: 3em;
@@ -343,8 +344,7 @@ img.gal-img {
 	color: #eee8d5;
 }
 .face.back {
-  transform: rotateY(180deg);
-  background-color: #073642;
+	background-color: #073642;
 }
 .face h1 {font-size: 10.5em; line-height: 1; color:#859900; letter-spacing: -18px;}
 .face h5 {font-size: 2em; line-height: 1;color: #859900; margin-top: -16px; margin-bottom: -16px;}
